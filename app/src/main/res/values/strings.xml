@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Preferencias</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_registro_cuenta">Registrar cuenta</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>v
+    <string name="txtUser">Username:</string>
+    <string name="txtPassw">Password:</string>
+    <string name="edUser">User</string>
+    <string name="edPassw">Passw</string>
+    <string name="btnEnviar">Enviar</string>
+    <string name="btnLogin">Login</string>
+    <string name="edEmail">Email</string>
+    <string name="btnExit">exit</string>
+    <string name="btnRegistrar">Registrar</string>
+    <string name="btnCancelar">Cancelar</string>
+    <string name="cbShowPass">Show Password</string>
+    <string name="tituloLogin">.::Tipo de usuario y contraseña::.</string>
+    <string name="txtRegistro">Crear cuenta...!</string>
+    <string name="txtRecuperarCuenta">Olvidaste tu contraseña?</string>
+    <string name="btn_Ok">OK</string>
+    <string name="btn_CANCEL">CANCEL</string>
+    <string name="bienvenido">Bienvenido...</string>
+
+    <!--Splash-->
+    <string name="txt_version">Version 1 beta</string>
+    <string name="splash">splash</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Recuper cuenta-->
+    <string name="msg_recuperar_cuenta">Ingresa tu nombre de usuario y correo electronico y te enviaremos tu  contraseña a tu cuenta de correo electronico.</string>
+    <string name="usuario">Usuario</string>
+
+
+    <string-array name="combo_estdo">
+        <item>Activo</item>
+        <item>Inactivo</item>
+        <item>En proceso</item>
+    </string-array>
+
+</resources>

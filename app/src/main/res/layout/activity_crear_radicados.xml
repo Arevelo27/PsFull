@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.andres_desarrollo2.psfull.CrearRadicadosActivity">
+
+    <LinearLayout
+        android:id="@+id/LinearTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:text="Titulo:"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edt_Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearTitulo"
+        android:layout_marginBottom="17dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:text="Lugar:"
+            android:textColor="@android:color/background_dark"
+            android:layout_marginBottom="3dp"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/combo_lugar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearTipologia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearLugar"
+        android:layout_marginBottom="17dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:text="Tipologia:"
+            android:textColor="@android:color/background_dark"
+            android:layout_marginBottom="3dp"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/combo_tipoLogia"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearTipologia"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="Descripción:"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_Descripcion"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:lines="4"
+                android:singleLine="false" />
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearDescripcion"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.5"
+            android:text="@string/btnCancelar"
+            android:onClick="cancelar"/>
+
+        <Button
+            android:id="@+id/btnRegis"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.5"
+            android:text="@string/btnRegistrar"
+            android:onClick="guardar"/>
+    </LinearLayout>
+
+</RelativeLayout>
